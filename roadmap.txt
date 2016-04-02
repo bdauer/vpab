@@ -1,0 +1,39 @@
+
+
+Current TODOs:
+
+Make terminal interface fully functional.
+
+Get lists (shopping and chore) working.
+
+Get activity tracker working.
+
+Set up a server with a database (use SQLAlchemy?) in order to store the lists and activities for remote access and eventual visualization.
+
+
+Long term plan:
+
+
+MODULES
+
+1. Activity Tracker
+2. Shopping List
+3. Chore list
+			(receive chores via sms or email)
+			(send email or sms when criteria are met)
+4. Schedule text message or phone call.
+			
+HIDDEN MODULES
+1. send and receive email
+2. send/receive sms
+3. Events/conditions (if condition is met, then email/sms/alert/modify variable)
+4. Visualize data.
+5. List manager (prototype for shopping list, chores list)
+6. Terminal interface
+7. Some other interface for web app, tbd.
+
+
+Possible later features (some of these, I can dream haha):
+
+send commands via email or text
+support for multiple users
