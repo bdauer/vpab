@@ -2,8 +2,7 @@
 # terminterface.py -- the terminal interface for the personal assistant.
 from . helpers import make_numbered as make_numbered
 
-
-
+# consider making the menus into classes. 
 
 
 shopping_list = ['apples', 'pears']
@@ -19,7 +18,7 @@ def print_menu(active_menu):
     numbered_menu = make_numbered(active_menu)
 
     for index, (key, value) in numbered_menu:
-        print('{0}. {1}'.format(index, key))
+        print '{0}. {1}'.format(index, key)
 
 
 def menu_selection(active_menu):
@@ -29,13 +28,13 @@ def menu_selection(active_menu):
             try:
                 value = int(input(prompt))
             except ValueError:
-                print("Please submit a number.")
+                print "Please submit a number."
                 continue
             if value > len(active_menu.keys()):
-                print("Please submit a valid number.")
+                print "Please submit a valid number."
                 continue
             if value < 0:
-                print("Please submit a valid number.")
+                print "Please submit a valid number."
                 continue
             else:
                 break
@@ -51,7 +50,7 @@ def menu_selection(active_menu):
                 active_menu = value
                 return active_menu
             else:
-                print("else condition was met")
+                print "else condition was met"
 
 
 

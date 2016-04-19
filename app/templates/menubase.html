@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h1> {{ menu.name }} Menu</h1>
+
+    {% for menu in menu.contents %} <!-- this will work like terminterface -->
+        <div><p>{{ menu.name }}</p>
+    {% endfor %}
+{% endblock %}

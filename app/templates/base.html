@@ -1,0 +1,14 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} -_- VpaB</title>
+        {% else %}
+        <title>wE arE VpaB</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>VpaB <a href ="/index">maiN menU</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>

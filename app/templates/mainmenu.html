@@ -1,0 +1,12 @@
+<!-- should have two types of menus: action, item and item. -->
+
+{% extends "base.html" %}
+{% block content %}
+
+    <h1> {{ menu.name }} Menu</h1>
+    <ol>
+    {% for item in contents %} <!-- this will work like terminterface -->
+        <li>{{ item.name }}</li>
+    {% endfor %}
+    </ol>
+{% endblock %}
